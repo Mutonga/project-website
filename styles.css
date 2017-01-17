@@ -1,0 +1,65 @@
+div.form1{
+    margin-top: 25%;
+    }
+#name, #email, #tel, #textarea{
+    padding: 15px;
+    border-radius: 4px;
+    margin: 3px;
+    opacity:0.7;
+
+}
+#textarea{
+  width: 100%;
+  resize: none;
+  width:  inherit;
+  overflow: auto;
+}
+input.finput:hover{
+  border-bottom: 3px solid #00ff00;
+}
+input[type="submit"]{
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  margin: 3px;
+  -moz-transition-property: width;
+  -moz-transition-duration: width 20s;
+  -moz-transition-delay: 2s;
+
+}
+input[type="submit"]:hover{
+  background-color: #00ff00;
+  width: 30%;
+
+}
+ul{
+  list-style-type: none;
+  padding:  0;
+  overflow: hidden;
+  margin: 0;
+
+}
+li{
+  float:left;
+
+}
+
+li a{
+  diplay: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.footer{
+  position:absolute;
+  background-color: black;
+  text-align: center;
+  color:white;
+  padding:10px;
+  bottom: 0;
+  right:0;
+  left:0;
+}
