@@ -1,11 +1,19 @@
+*{
+  box-sizing: border-box;
+}
 div.form1{
-    margin-top: 25%;
+    margin-top: 10%;
     }
-#name, #email, #tel, #textarea{
+.finput{
+    border-bottom: 1px solid red;
+    background-color: #000000;
     padding: 15px;
     border-radius: 4px;
     margin: 3px;
     opacity:0.7;
+    color:white;
+}
+#name{
 
 }
 #textarea{
@@ -15,20 +23,29 @@ div.form1{
   overflow: auto;
 }
 input.finput:hover{
-  border-bottom: 3px solid #00ff00;
+  border-bottom: 3px solid red;
+  width:25%;
+}
+
+.finput:focus{
+  color:white;
+  width:20%;
+  background-color: #000000;
+
 }
 input[type="submit"]{
   padding: 4px;
   border: none;
   border-radius: 4px;
   margin: 3px;
-  -moz-transition-property: width;
-  -moz-transition-duration: width 20s;
-  -moz-transition-delay: 2s;
+  transition-property: width;
+  transition-duration: width 20s;
+  transition-delay: 2s;
 
 }
+
 input[type="submit"]:hover{
-  background-color: #00ff00;
+
   width: 30%;
 
 }
