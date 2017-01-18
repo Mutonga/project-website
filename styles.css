@@ -1,56 +1,85 @@
 div.form1{
-    margin-top: 25%;
+    margin-top: 20%;
     }
-#name, #email, #tel, #textarea{
+
+.navbar{
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+ul{
+      list-style-type: none;
+      padding:  14px 16px;
+      overflow: hidden;
+      margin: 0;
+      background-color: #000000;
+      opacity: 0.8;
+
+}
+  li{
+      float:left;
+    }
+
+  li:hover:not(.active){
+
+  }
+
+  li a.active{
+
+    }
+
+li a{
+      diplay: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+.finput{
     padding: 15px;
     border-radius: 4px;
     margin: 3px;
-    opacity:0.7;
-
+    opacity:0.8;
+    border:none;
+    background-color: #000000;
+    color:white;
 }
+
+input.finput:hover, #textarea:hover{
+  border-bottom: 2px solid red;
+}
+
+.finput:focus, #textarea:focus{
+  width:30%;
+  border-left: 2px solid red;
+}
+
 #textarea{
   width: 100%;
   resize: none;
   width:  inherit;
   overflow: auto;
 }
-input.finput:hover{
-  border-bottom: 3px solid #00ff00;
+
+input.finput:hover, #textarea:hover{
+  border-bottom: 3px solid red;
 }
-input[type="submit"]{
+
+  input[type="submit"]{
   padding: 4px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 3px;
-  -moz-transition-property: width;
-  -moz-transition-duration: width 20s;
-  -moz-transition-delay: 2s;
-
+  background-color: black;
+  color:red;
 }
+
 input[type="submit"]:hover{
-  background-color: #00ff00;
-  width: 30%;
-
-}
-ul{
-  list-style-type: none;
-  padding:  0;
-  overflow: hidden;
-  margin: 0;
-
-}
-li{
-  float:left;
-
-}
-
-li a{
-  diplay: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-
+  color:red;
+  border: 2px solid red;
 }
 
 .footer{
