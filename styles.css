@@ -46,6 +46,7 @@ li a{
     border:none;
     background-color: #000000;
     color:white;
+
 }
 
 input.finput:hover, #textarea:hover{
@@ -53,8 +54,9 @@ input.finput:hover, #textarea:hover{
 }
 
 .finput:focus, #textarea:focus{
-  width:30%;
+  width:20%;
   border-left: 2px solid red;
+  border-bottom: 1px solid #000000;
 }
 
 #textarea{
