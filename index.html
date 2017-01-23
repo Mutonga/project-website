@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+
   <style>
 body{
   margin: 0;
@@ -13,9 +14,21 @@ body{
   background-size: cover;
 }
   </style>
-  <title>mytemplate</title>
+  <title> mytemplate</title>
+  <script>
+  "use strict";
+  function validateForm(){
+    var x = document.forms["myForm"]["fname"].value;
+    if (x==" "){
+      alert("Please enter name");
+      return false;
+    }
+  }
+  </script>
+
 </head>
 <body>
+  <script src="/js/mytemplate.js"></script>
   <div class="Navbar">
     <ul>
       <li><a class="active" href="#home">Home</a></li>
@@ -25,17 +38,13 @@ body{
     </ul>
   </div>
 <div class="form1" align="center">
-    <form>
-      <label for="name">Name</label>
-      <input id="name" class="finput" type="text" placeholder="Name" required>
-      <label for="email">Email</label>
-      <input id="email" class="finput" type="email" placeholder="Email" name="email" required>
+    <form name="myForm" onsubmit="return validateForm()" method="POST">
+      <input id="name" class="finput" type="text" placeholder="Name" name="fname" >
+      <input id="email" class="finput" type="email" placeholder="Email" name="email">
       <br>
-      <label for="tel">Tel</label>
       <input id="tel" class="finput" type="tel" placeholder="Phone number" size="46">
       <br>
-      <textarea id="textarea" class="finput" name="textarea">
-      </textarea>
+      <textarea id="textarea" class="finput" name="textarea"> </textarea>
       <br>
       <input type="submit" name="Enter" value="ORDER">
     </form>
