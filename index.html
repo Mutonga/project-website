@@ -14,6 +14,7 @@ body{
 }
   </style>
   <title>mytemplate</title>
+<script src="/js/myTemplate.js"></script>
 </head>
 <body>
   <div class="Navbar">
@@ -25,19 +26,17 @@ body{
     </ul>
   </div>
 <div class="form1" align="center">
-    <form>
-      <label for="name">Name</label>
-      <input id="name" class="finput" type="text" placeholder="Name" required>
-      <label for="email">Email</label>
+    <form name="myForm" onsubmit=" return validateForm()" action="action">
+      <input id="name" class="finput" type="text" placeholder="Name" name="fname" required>
       <input id="email" class="finput" type="email" placeholder="Email" name="email" required>
       <br>
-      <label for="tel">Tel</label>
       <input id="tel" class="finput" type="tel" placeholder="Phone number" size="46">
+      <p id="tel1"></p>
       <br>
       <textarea id="textarea" class="finput" name="textarea">
       </textarea>
       <br>
-      <input type="submit" name="Enter" value="ORDER">
+      <input type="submit" onclick="myFunction()" name="Enter" value="ORDER">
     </form>
 </div>
 <div class="footer">
